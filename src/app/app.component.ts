@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { StateInfo } from 'projects/states-map/src/lib/state-info';
 
 @Component({
   selector: 'gtx-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'states-map-demo';
+  constructor() {}
+
+  selectState(state: StateInfo) {
+    console.log(state);
+  }
 }

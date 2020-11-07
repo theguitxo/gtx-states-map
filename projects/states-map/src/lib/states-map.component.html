@@ -1,0 +1,49 @@
+<div style="display: inline-block;">
+  <svg
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="1.1"
+    viewBox="0 0 211.93124 151.35849"
+    height="572.0636"
+    width="801"
+    shape-rendering="crispEdges">
+    <!-- Other countries -->
+    <g *ngIf="showOtherCountries" id="other_countries" transform="translate(-1.3040219,-1.1926902)">
+      <ng-container *ngFor="let country of otherCountries">
+        <path class="map__other-countries" [attr.d]="country.data">
+          <title>{{ country.title }}</title>
+        </path>
+      </ng-container>
+    </g>
+    <!-- States -->
+    <g id="states" transform="translate(2.4001448,-74.746859)" style="display:inline">
+      <ng-container *ngFor="let state of states">
+        <path
+          [attr.d]="state.data"
+          [attr.transform]="state.transform"
+          class="map__state"
+          (click)="showStateInfo(state)">
+          <title>{{ getStateTitle(state) }}</title>
+        </path>
+      </ng-container>
+    </g>
+    <!-- Map elements -->
+    <g *ngIf="includeIslandsStates" id="canary_islands_separator">
+      <path class="map__elements" d="m 0.92604163,122.50208 66.14583237,0 v 28.17813" />
+    </g>
+    <g id="frame" style="display:inline">
+      <rect
+        class="map__elements"
+        width="211.64705"
+        height="151.35455"
+        x="0.28347874"
+        y="4.7860993e-08"
+        ry="0.066145837"
+        rx="0.066145845"/>
+    </g>
+  </svg>
+</div>

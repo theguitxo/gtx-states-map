@@ -123,6 +123,46 @@
           }
         }
       }
+    },
+    "states-map": {
+      "projectType": "library",
+      "root": "projects/states-map",
+      "sourceRoot": "projects/states-map/src",
+      "prefix": "gtx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/states-map/tsconfig.lib.json",
+            "project": "projects/states-map/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/states-map/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/states-map/src/test.ts",
+            "tsConfig": "projects/states-map/tsconfig.spec.json",
+            "karmaConfig": "projects/states-map/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/states-map/tsconfig.lib.json",
+              "projects/states-map/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "states-map-demo"
 }
