@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { StateInfo } from 'projects/states-map/src/lib/state-info';
+import { CustomOtherCountriesNames, FRANCE, StateInfo } from 'projects/states-map/src/lib/state-info';
 
 @Component({
   selector: 'gtx-root',
@@ -7,7 +7,16 @@ import { StateInfo } from 'projects/states-map/src/lib/state-info';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor() {}
+  otherCountriesNames: CustomOtherCountriesNames[] = [
+    {
+      id: FRANCE,
+      title: 'La France',
+    },
+  ];
+
+  constructor() {
+    console.log(this.otherCountriesNames);
+  }
 
   selectState(state: StateInfo) {
     console.log(state);

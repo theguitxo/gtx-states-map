@@ -1,8 +1,7 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { AFRICAN_CITIES, ISLANDS_STATES, OTHER_COUNTRIES, STATES } from './constants';
-import { MapItem, OtherCountriesNames, State, StateInfo } from './state-info';
+import { MapItem, State, StateInfo, CustomOtherCountriesNames, OtherCountryID } from './state-info';
 
-type otherCountry = 'france' | 'portugal' | 'africa';
 @Component({
   selector: 'gtx-states-map',
   templateUrl: './states-map.component.html',
@@ -14,7 +13,7 @@ export class StatesMapComponent implements OnInit {
   @Input('includeIslandsStates') includeIslandsStates = true;
   @Input('includeAfricanCities') includeAfricanCities = true;
   @Input('useVariantTitle') useVariantTitle = false;
-  @Input('otherCountriesNames') otherCountriesNames: OtherCountriesNames;
+  @Input('otherCountriesNames') otherCountriesNames;
 
   @Output('selectState') selectStateEvent = new EventEmitter<State>();
 
@@ -46,5 +45,24 @@ export class StatesMapComponent implements OnInit {
     return this.useVariantTitle ? state.variantTitle : state.title;
   }
 
-  getOtherCountriesTitle(otherCountryName:)
+  /**
+   * @description
+   * returns the name for the other countries (France, Portugal,
+   * Africa -isn't a country, but I included it in this list)
+   * to show in the title of the elements in the map.
+   * 
+   * @param countryID Identificator in the list of other countries
+   * 
+   * @returns string the name of the country to show in the map
+   */
+  getOtherCountryName(countryID: OtherCountryID): string {
+    let title: string;
+    if (this.otherCountriesNames) {
+      title = this.otherCountriesNames.find(item => item.id === countryID)?.title;
+    }
+    if (!title) {
+      title = OTHER_COUNTRIES.find(item => item.id === countryID).title;
+    }
+    return title;
+  }
 }

@@ -1,3 +1,9 @@
+export const FRANCE = 'france';
+export const PORTUGAL = 'portugal';
+export const AFRICA = 'africa';
+
+export type OtherCountryID = typeof FRANCE | typeof PORTUGAL | typeof AFRICA;
+
 export interface MapItem {
   data: string;
   title: string;
@@ -9,13 +15,16 @@ export interface StateInfo extends MapItem {
   variantTitle: string;
 }
 
+export interface OtherCountry extends MapItem {
+  id: OtherCountryID;
+}
+
 export interface State {
   code: string;
   title: string;
 }
 
-export interface OtherCountriesNames {
-  france: string;
-  portugal: string;
-  afica: string;
+export interface CustomOtherCountriesNames {
+  id: OtherCountryID;
+  title: string;
 }

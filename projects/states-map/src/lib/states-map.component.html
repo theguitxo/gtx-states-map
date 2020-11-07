@@ -15,7 +15,7 @@
     <g *ngIf="showOtherCountries" id="other_countries" transform="translate(-1.3040219,-1.1926902)">
       <ng-container *ngFor="let country of otherCountries">
         <path class="map__other-countries" [attr.d]="country.data">
-          <title>{{ country.title }}</title>
+          <title>{{ getOtherCountryName(country.id) }}</title>
         </path>
       </ng-container>
     </g>
