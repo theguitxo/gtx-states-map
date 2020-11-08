@@ -1,0 +1,14 @@
+<div class="options-bar__wrapper">
+  <div
+    class="options-bar__option"
+    [class.options-bar__option--selected]="isSelected(optionsList.INFO)"
+    (click)="selectOption(optionsList.INFO)">
+    States Info
+  </div>
+  <div
+    class="options-bar__option"
+    [class.options-bar__option--selected]="isSelected(optionsList.QUIZ)"
+    (click)="selectOption(optionsList.QUIZ)">
+    States Quiz
+  </div>
+</div>

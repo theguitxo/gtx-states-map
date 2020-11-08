@@ -1,0 +1,16 @@
+.components__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.map__wrapper,
+.info-box__wrapper {
+  width: 50%;
+  padding: .5rem;
+  box-sizing: border-box;
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+  }
+}

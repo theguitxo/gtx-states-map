@@ -1,0 +1,17 @@
+<div>
+  States Info
+</div>
+<div class="components__wrapper">
+  <div class="map__wrapper">
+    <gtx-states-map
+      [useVariantTitle]="true"
+      (selectState)="selectState($event)">
+    </gtx-states-map>
+  </div>
+  <div class="info-box__wrapper">
+    <div>infomartion</div>
+    <div *ngIf="selectedStateName">
+      >> {{ selectedStateName }}
+    </div>
+  </div>
+</div>

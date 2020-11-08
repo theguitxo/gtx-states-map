@@ -1,21 +1,10 @@
-<div style="display: inline-block;">
-  <svg
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    version="1.1"
-    viewBox="0 0 211.93124 151.35849"
-    height="572.0636"
-    width="801"
-    shape-rendering="crispEdges">
+<div class="map__wrapper">
+  <svg viewBox="0 0 211.93124 151.35849">
     <!-- Other countries -->
     <g *ngIf="showOtherCountries" id="other_countries" transform="translate(-1.3040219,-1.1926902)">
       <ng-container *ngFor="let country of otherCountries">
         <path class="map__other-countries" [attr.d]="country.data">
-          <title *ngIf="showTitles">{{ getOtherCountryName(country.id) }}</title>
+          <title *ngIf="showTitlesOtherCountries">{{ getOtherCountryName(country.id) }}</title>
         </path>
       </ng-container>
     </g>

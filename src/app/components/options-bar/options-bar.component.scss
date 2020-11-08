@@ -1,0 +1,23 @@
+.options-bar__wrapper {
+  padding: .25rem .5rem .25rem .25rem;
+  display: flex;
+  justify-content: start;
+
+}
+
+.options-bar__option {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 .5rem;
+  padding: 1rem;
+  background-color: #B8D8E4;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  &--selected {
+    background-color: #B3D173;
+  }
+  &:first-child {
+    margin-left: 0;
+  }
+}
