@@ -9,6 +9,7 @@ import { MapItem, State, StateInfo, CustomOtherCountriesNames, OtherCountryID } 
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class StatesMapComponent implements OnInit {
+  @Input('showTitles') showTitles = true;
   @Input('showOtherCountries') showOtherCountries = true;
   @Input('includeIslandsStates') includeIslandsStates = true;
   @Input('includeAfricanCities') includeAfricanCities = true;
@@ -33,7 +34,7 @@ export class StatesMapComponent implements OnInit {
     }
   }
 
-  showStateInfo(state: StateInfo): void {
+  sendStateInfo(state: StateInfo): void {
     const emitState: State = {
       code: state.code,
       title: this.useVariantTitle ? state.variantTitle : state.title,
