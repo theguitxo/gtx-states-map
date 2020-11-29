@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+%text__wrapper {
+  padding: .5rem 1rem;
+
+  @media (max-width: 575.98px) {
+    padding: .5rem;
+  }
+}
+
+.text__wrapper--justified {
+  @extend %text__wrapper;
+  text-align: justify;
+}
+
+.option-title__wrapper {
+  padding: .5rem .5rem 0 .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.components__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  &--column {
+    flex-direction: column;
+  }
+}
+
+.map__wrapper,
+.info-box__wrapper {
+  width: 50%;
+  padding: .5rem;
+  box-sizing: border-box;
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+  }
+}
+

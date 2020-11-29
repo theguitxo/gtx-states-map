@@ -16,9 +16,7 @@
       "dom"
     ],
     "paths": {
-      "states-map": [
-        "dist/states-map"
-      ]
-    }
+    },
+    "resolveJsonModule": true
   }
 }

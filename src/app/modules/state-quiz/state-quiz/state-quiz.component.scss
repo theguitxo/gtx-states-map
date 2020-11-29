@@ -1,0 +1,15 @@
+.components__line {
+  padding: .5rem 0;
+}
+
+.components__button {
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  background-color: cornflowerblue;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background-color: darkslateblue;
+  }
+}

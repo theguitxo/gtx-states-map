@@ -1,8 +1,4 @@
-export const FRANCE = 'france';
-export const PORTUGAL = 'portugal';
-export const AFRICA = 'africa';
-
-export type OtherCountryID = typeof FRANCE | typeof PORTUGAL | typeof AFRICA;
+export type OtherCountryID = 'FRANCE' | 'PORTUGAL' | 'AFRICA';
 
 export interface MapItem {
   data: string;

@@ -1,13 +1,12 @@
 import { ModuleWithProviders, NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { StatesMapService } from './states-map.service';
 import { StatesMapComponent } from './states-map.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [StatesMapComponent],
-  imports: [
-    BrowserModule,
-  ],
+  imports: [CommonModule],
+  providers: [StatesMapService],
   exports: [StatesMapComponent]
 })
-export class StatesMapModule {
-}
+export class StatesMapModule {}

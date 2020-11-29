@@ -1,0 +1,38 @@
+<div class="option-title__wrapper">
+  States Quiz
+</div>
+<div class="components__wrapper">
+  <div class="map__wrapper">
+    <gtx-states-map
+      [showTitles]="false"
+      [useVariantTitle]="true"
+      (selectState)="selectState($event)">
+    </gtx-states-map>
+  </div>
+  <div class="info-box__wrapper">
+    <div [gtxInfoBox]="'blue'">
+      Press play and click on the correct state.
+    </div>
+    <div class="components__line">
+      <div
+        (click)="playGame()"
+        class="components__button">Play</div>
+    </div>
+    <ng-container *ngIf="gameStarted">
+      <div class="components__line">
+        Click on: {{ stateRandom.name }}
+      </div>
+    </ng-container>
+    <div *ngIf="showHowPlayAgain" [gtxInfoBox]="'blue'">
+      You must find the correct state before play again
+    </div>
+    <ng-container *ngIf="showResult">
+      <div *ngIf="correct" [gtxInfoBox]="'green'">
+        Great! Your answer was correct
+      </div>
+      <div *ngIf="!correct" [gtxInfoBox]="'red'">
+        Ups! You are wrong
+      </div>
+    </ng-container>
+  </div>
+</div>

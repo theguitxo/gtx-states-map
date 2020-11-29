@@ -1,0 +1,25 @@
+<div class="option-title__wrapper">
+  States Info
+</div>
+<div class="components__wrapper">
+  <div class="map__wrapper">
+    <gtx-states-map
+      [useVariantTitle]="true"
+      (selectState)="selectState($event)">
+    </gtx-states-map>
+  </div>
+  <div class="info-box__wrapper">
+    <div [gtxInfoBox]="'green'">
+      Press over one of the states of the map to get information about it.
+    </div>
+    <app-state-datasheet [inputState]="inputState"></app-state-datasheet>
+  </div>
+</div>
+<div class="components__wrapper components__wrapper--column">
+  <div class="text__wrapper--justified">
+    The images of the flags are from the <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+  </div>
+  <div class="text__wrapper--justified">
+    The population data are given from the Spanish INE (National Statistical Institute) using their <a href="https://www.ine.es/dyngs/DataLab/manual.html?cid=45" target="_blank">API</a>
+  </div>
+</div>

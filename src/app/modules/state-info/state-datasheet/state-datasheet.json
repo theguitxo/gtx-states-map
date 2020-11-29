@@ -1,0 +1,679 @@
+[
+  {
+    "code": "01",
+    "flag": "01.alava.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445523",
+        "men": "CP445522",
+        "women": "CP445521"
+      }
+    },
+    "name": "Araba/Álava",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/%C3%81lava"
+  },
+  {
+    "code": "02",
+    "flag": "02.albacete.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445532",
+        "men": "CP445531",
+        "women": "CP445530"
+      }
+    },
+    "name": "Albacete",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Albacete"
+  },
+  {
+    "code": "03",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445529",
+        "men": "CP445528",
+        "women": "CP445527"
+      }
+    },
+    "name": "Alicante/Alacant",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Alicante"
+  },
+  {
+    "code": "04",
+    "flag": "04.almeria.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445526",
+        "men": "CP445525",
+        "women": "CP445524"
+      }
+    },
+    "name": "Almería",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Almer%C3%ADa"
+  },
+  {
+    "code": "05",
+    "flag": "05.avila.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445517",
+        "men": "CP445516",
+        "women": "CP445515"
+      }
+    },
+    "name": "Ávila",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_%C3%81vila"
+  },
+  {
+    "code": "06",
+    "flag": "06.badajoz.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445514",
+        "men": "CP445513",
+        "women": "CP445512"
+      }
+    },
+    "name": "Badajoz",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Badajoz"
+  },
+  {
+    "code": "07",
+    "flag": "07.baleares.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445511",
+        "men": "CP445510",
+        "women": "CP445509"
+      }
+    },
+    "name": "Balears, Illes",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Islas_Baleares"
+  },
+  {
+    "code": "08",
+    "flag": "08.barcelona.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445508",
+        "men": "CP445507",
+        "women": "CP445506"
+      }
+    },
+    "name": "Barcelona",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Barcelona"
+  },
+  {
+    "code": "09",
+    "flag": "09.burgos.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445502",
+        "men": "CP445501",
+        "women": "CP445500"
+      }
+    },
+    "name": "Burgos",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Burgos"
+  },
+  {
+    "code": "10",
+    "flag": "10.caceres.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445499",
+        "men": "CP445498",
+        "women": "CP445497"
+      }
+    },
+    "name": "Cáceres",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_C%C3%A1ceres"
+  },
+  {
+    "code": "11",
+    "flag": "11.cadiz.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445496",
+        "men": "CP445495",
+        "women": "CP445494"
+      }
+    },
+    "name": "Cádiz",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_C%C3%A1diz"
+  },
+  {
+    "code": "12",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445490",
+        "men": "CP445489",
+        "women": "CP445488"
+      }
+    },
+    "name": "Castellón/Castelló",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Castell%C3%B3n"
+  },
+  {
+    "code": "13",
+    "flag": "13.ciudad.real.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445487",
+        "men": "CP445486",
+        "women": "CP445485"
+      }
+    },
+    "name": "Ciudad Real",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Ciudad_Real"
+  },
+  {
+    "code": "14",
+    "flag": "14.cordoba.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445484",
+        "men": "CP445484",
+        "women": "CP445482"
+      }
+    },
+    "name": "Córdoba",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_C%C3%B3rdoba_(Espa%C3%B1a)"
+  },
+  {
+    "code": "15",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445481",
+        "men": "CP445480",
+        "women": "CP445479"
+      }
+    },
+    "name": "Coruña, A",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_La_Coru%C3%B1a"
+  },
+  {
+    "code": "16",
+    "flag": "16.cuenca.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445478",
+        "men": "CP445477",
+        "women": "CP445476"
+      }
+    },
+    "name": "Cuenca",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Cuenca"
+  },
+  {
+    "code": "17",
+    "flag": "17.gerona.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445472",
+        "men": "CP445471",
+        "women": "CP445470"
+      }
+    },
+    "name": "Girona",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Gerona"
+  },
+  {
+    "code": "18",
+    "flag": "18.granada.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445469",
+        "men": "CP445468",
+        "women": "CP445467"
+      }
+    },
+    "name": "Granada",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Granada"
+  },
+  {
+    "code": "19",
+    "flag": "19.guadalajara.png",
+    "opcodes": {
+      "population": {
+        "all": "CP445466",
+        "men": "CP445465",
+        "women": "CP445464"
+      }
+    },
+    "name": "Guadalajara",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Guadalajara"
+  },
+  {
+    "code": "20",
+    "flag": "20.guipuzcoa.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445475",
+        "men": "CP445474",
+        "women": "CP445473"
+      }
+    },
+    "name": "Gipuzkoa",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Guip%C3%BAzcoa"
+  },
+  {
+    "code": "21",
+    "flag": "21.huelva.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445463",
+        "men": "CP445462",
+        "women": "CP445461"
+      }
+    },
+    "name": "Huelva",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Huelva"
+  },
+  {
+    "code": "22",
+    "flag": "22.huesca.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445460",
+        "men": "CP445459",
+        "women": "CP445458"
+      }
+    },
+    "name": "Huesca",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Huesca"
+  },
+  {
+    "code": "23",
+    "flag": "23.jaen.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445457",
+        "men": "CP445456",
+        "women": "CP445455"
+      }
+    },
+    "name": "Jaén",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Ja%C3%A9n_(Espa%C3%B1a)"
+  },
+  {
+    "code": "24",
+    "flag": "24.leon.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445454",
+        "men": "CP445453",
+        "women": "CP445452"
+      }
+    },
+    "name": "León",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Le%C3%B3n"
+  },
+  {
+    "code": "25",
+    "flag": "25.lerida.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445451",
+        "men": "CP445450",
+        "women": "CP445449"
+      }
+    },
+    "name": "Lleida",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_L%C3%A9rida"
+  },
+  {
+    "code": "26",
+    "flag": "26.la.rioja.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445421",
+        "men": "CP445420",
+        "women": "CP445419"
+      }
+    },
+    "name": "Rioja, La",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/La_Rioja_(Espa%C3%B1a)"
+  },
+  {
+    "code": "27",
+    "flag": "27.lugo.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445448",
+        "men": "CP445447",
+        "women": "CP445446"
+      }
+    },
+    "name": "Lugo",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Lugo"
+  },
+  {
+    "code": "28",
+    "flag": "28.madrid.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445445",
+        "men": "CP445444",
+        "women": "CP445443"
+      }
+    },
+    "name": "Madrid",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Madrid"
+  },
+  {
+    "code": "29",
+    "flag": "29.malaga.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445442",
+        "men": "CP445441",
+        "women": "CP445440"
+      }
+    },
+    "name": "Málaga",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_M%C3%A1laga"
+  },
+  {
+    "code": "30",
+    "flag": "30.murcia.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445439",
+        "men": "CP445438",
+        "women": "CP445437"
+      }
+    },
+    "name": "Murcia",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Regi%C3%B3n_de_Murcia"
+  },
+  {
+    "code": "31",
+    "flag": "31.navarra.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445436",
+        "men": "CP445435",
+        "women": "CP445434"
+      }
+    },
+    "name": "Navarra",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Navarra"
+  },
+  {
+    "code": "32",
+    "flag": "32.orense.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445433",
+        "men": "CP445432",
+        "women": "CP445431"
+      }
+    },
+    "name": "Ourense",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Orense"
+  },
+  {
+    "code": "33",
+    "flag": "33.asturias.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445520",
+        "men": "CP445519",
+        "women": "CP445518"
+      }
+    },
+    "name": "Asturias",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Asturias"
+  },
+  {
+    "code": "34",
+    "flag": "34.palencia.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445430",
+        "men": "CP445429",
+        "women": "CP445428"
+      }
+    },
+    "name": "Palencia",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Palencia"
+  },
+  {
+    "code":"35",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445427",
+        "men": "CP445426",
+        "women": "CP445425"
+      }
+    },
+    "name": "Palmas, Las",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Las_Palmas"
+  },
+  {
+    "code": "36",
+    "flag": "36.pontevedra.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445424",
+        "men": "CP445423",
+        "women": "CP445422"
+      }
+    },
+    "name": "Pontevedra",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Pontevedra"
+  },
+  {
+    "code": "37",
+    "flag": "37.salamanca.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445418",
+        "men": "CP445417",
+        "women": "CP445416"
+      }
+    },
+    "name": "Salamanca",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Salamanca"
+  },
+  {
+    "code": "39",
+    "flag": "39.cantabria.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445493",
+        "men": "CP445492",
+        "women": "CP445491"
+      }
+    },
+    "name": "Cantabria",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Cantabria"
+  },
+  {
+    "code": "38",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445415",
+        "men": "CP445414",
+        "women": "CP445413"
+      }
+    },
+    "name": "Santa Cruz de Tenerife",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Santa_Cruz_de_Tenerife"
+  },
+  {
+    "code": "40",
+    "flag": "40.segovia.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445412",
+        "men": "CP445411",
+        "women": "CP445410"
+      }
+    },
+    "name": "Segovia",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Segovia"
+  },
+  {
+    "code": "41",
+    "flag": "41.sevilla.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445409",
+        "men": "CP445408",
+        "women": "CP445407"
+      }
+    },
+    "name": "Sevilla",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Sevilla"
+  },
+  {
+    "code": "42",
+    "flag": "42.soria.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445406",
+        "men": "CP445405",
+        "women": "CP445404"
+      }
+    },
+    "name": "Soria",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Soria"
+  },
+  {
+    "code": "43",
+    "flag": "43.tarragona.jpg",
+    "opcodes": {
+      "population": {
+        "all": "CP445403",
+        "men": "CP445402",
+        "women": "CP445401"
+      }
+    },
+    "name": "Tarragona",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Tarragona"
+  },
+  {
+    "code": "44",
+    "flag": "44.teruel.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445400",
+        "men": "CP445399",
+        "women": "CP445398"
+      }
+    },
+    "name": "Teruel",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Teruel"
+  },
+  {
+    "code": "45",
+    "flag": "45.toledo.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445397",
+        "men": "CP445396",
+        "women": "CP445395"
+      }
+    },
+    "name": "Toledo",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Toledo"
+  },
+  {
+    "code": "46",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445394",
+        "men": "CP445393",
+        "women": "CP445392"
+      }
+    },
+    "name": "Valencia/València",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Valencia"
+  },
+  {
+    "code": "47",
+    "flag": "47.valladolid.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445391",
+        "men": "CP445390",
+        "women": "CP445389"
+      }
+    },
+    "name": "Valladolid",
+    "wikipediaUrl":"https://es.wikipedia.org/wiki/Provincia_de_Valladolid"
+
+  },
+  {
+    "code": "48",
+    "flag": "48.vizcaya.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445505",
+        "men": "CP445504",
+        "women": "CP445503"
+      }
+    },
+    "name": "Bizkaia",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Vizcaya"
+  },
+  {
+    "code": "49",
+    "flag": "",
+    "opcodes": {
+      "population": {
+        "all": "CP445388",
+        "men": "CP445387",
+        "women": "CP445386"
+      }
+    },
+    "name": "Zamora",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Zamora"
+  },
+  {
+    "code": "50",
+    "flag": "50.zaragoza.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445385",
+        "men": "CP445384",
+        "women": "CP445383"
+      }
+    },
+    "name": "Zaragoza",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Provincia_de_Zaragoza"
+  },
+  {
+    "code": "51",
+    "flag": "51.ceuta.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445382",
+        "men": "CP445381",
+        "women": "CP445380"
+      }
+    },
+    "name": "Ceuta",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Ceuta"
+  },
+  {
+    "code": "52",
+    "flag": "52.melilla.svg",
+    "opcodes": {
+      "population": {
+        "all": "CP445379",
+        "men": "CP445378",
+        "women": "CP445377"
+      }
+    },
+    "name": "Melilla",
+    "wikipediaUrl": "https://es.wikipedia.org/wiki/Melilla"
+  }
+]

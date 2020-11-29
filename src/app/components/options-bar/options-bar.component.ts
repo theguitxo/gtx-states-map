@@ -1,14 +1,17 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-interface options {
-  [key: string]: string;
-}
-
-const OPTIONS: options = {
-  INFO: 'info',
-  QUIZ: 'quiz',
+export enum Options {
+  INFO = 'info',
+  QUIZ = 'quiz',
+  SELECTOR = 'selector',
 };
+
+export interface Option {
+  id: Options;
+  route: string;
+  title: string;
+}
 
 @Component({
   selector: 'app-options-bar',
@@ -16,28 +19,35 @@ const OPTIONS: options = {
   styleUrls: ['./options-bar.component.scss'],
 })
 export class OptionsBarComponent {
-  optionsList: options = OPTIONS;
-  selectedOption: string = OPTIONS.INFO;
+  optionsList: Option[] = [
+    {
+      id: Options.INFO,
+      route: 'state-info',
+      title: 'States Info',
+    },
+    {
+      id: Options.QUIZ,
+      route: 'state-quiz',
+      title: 'States Quiz',
+    },
+    {
+      id: Options.SELECTOR,
+      route: 'state-selector',
+      title: 'States Selector',
+    },
+  ];
+  selectedOption: Options;
 
   constructor(
     private router: Router,
   ) {}
 
-  isSelected(option: string): boolean {
-    return option === this.selectedOption;
+  isSelected(option: Option): boolean {
+    return option.id === this.selectedOption;
   }
 
-  selectOption(option: string): void {
-    this.selectedOption = option;
-    this.router.navigate([this.getRoute(option)]);
-  }
-
-  private getRoute(option: string): string {
-    const routes = {
-      [OPTIONS.INFO]: 'state-info',
-      [OPTIONS.QUIZ]: 'state-quiz',
-    };
-
-    return routes[option];
+  selectOption(option: Option): void {
+    this.selectedOption = option.id;
+    this.router.navigate([option.route]);
   }
 }

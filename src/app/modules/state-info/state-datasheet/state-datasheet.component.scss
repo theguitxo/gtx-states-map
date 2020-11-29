@@ -1,0 +1,27 @@
+.state-info__info-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.state-info__flag-wrapper {
+  margin-right: .5rem;
+  border: solid 1px #000;
+  background-color: white;
+  cursor: pointer;
+}
+
+.state-info__flag-image {
+  display: block;
+  width: 4rem;
+  &--no-flag {
+    width: 3rem;
+    margin: .25rem .5rem;
+  }
+}
+
+.state-info__loading-wrapper {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+<ng-container *ngIf="inputState">
+  <div class="state-info__info-wrapper">
+    <div class="state-info__flag-wrapper">
+      <img [src]="stateFlag"
+        class="state-info__flag-image"
+        [class.state-info__flag-image--no-flag]="!stateInfo.flag">
+    </div>
+    <div>{{ inputState.title }}</div>
+  </div>
+  <div class="state-info__info-wrapper">
+    <div>
+      <a [href]="stateInfo.wikipediaUrl" target="_blank">Wikipedia link</a>
+    </div>
+  </div>
+  <ng-container *ngIf="!(populationMen.loading | async) && !(populationWomen.loading | async); else loadingTemplate">
+    <div class="state-info__info-wrapper">
+      <div>Population</div>
+    </div>
+    <div class="state-info__info-wrapper">
+      <ng-container *ngIf="!populationMen.error; else errorData">
+        <div>Men: {{ populationMen.data | number:'1.0-0':'es' }}</div>
+      </ng-container>
+    </div>
+    <div class="state-info__info-wrapper">
+      <ng-container *ngIf="!populationMen.error; else errorData">
+        <div>Women: {{ populationWomen.data | number:'1.0-0':'es' }}</div>
+      </ng-container>
+    </div>
+  </ng-container>
+</ng-container>
+
+<ng-template #loadingTemplate>
+  <div class="state-info__info-wrapper">
+    <div class="state-info__loading-wrapper">Loading...</div>
+  </div>
+</ng-template>
+
+<ng-template #errorData>
+  <div>
+    Error getting data
+  </div>
+</ng-template>

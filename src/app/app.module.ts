@@ -1,31 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { StatesMapModule } from 'projects/states-map/src/public-api';
 import { AppRoutingModule } from './app-routing.module';
 
 import {
+  HomeComponent,
   OptionsBarComponent,
-  StateFlagComponent,
-  StateInfoComponent,
 } from './components/index';
+
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
+registerLocaleData(localeEs, 'es');
 
 @NgModule({
   declarations: [
     AppComponent,
-    StateFlagComponent,
-    StateInfoComponent,
-    OptionsBarComponent
+    HomeComponent,
+    OptionsBarComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
-    StatesMapModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

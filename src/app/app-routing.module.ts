@@ -2,22 +2,29 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import {
-  StateInfoComponent,
-  StateQuizComponent,
+  HomeComponent,
 } from './components/index';
 
 const routes: Routes = [
   {
     path: 'state-info',
-    component: StateInfoComponent,
+    loadChildren: () => import('./modules/state-info/state-info.module').then(m => m.StateInfoModule),
   },
   {
     path: 'state-quiz',
-    component: StateQuizComponent,
+    loadChildren: () => import('./modules/state-quiz/state-quiz.module').then(m => m.StateQuizModule),
+  },
+  {
+    path: 'state-selector',
+    loadChildren: () => import('./modules/state-selector/state-selector.module').then(m => m.StateSelectorModule),
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
   },
   {
     path: '',
-    redirectTo: 'state-info',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {

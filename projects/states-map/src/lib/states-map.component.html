@@ -15,6 +15,9 @@
           [attr.d]="state.data"
           [attr.transform]="state.transform"
           class="map__state"
+          [style.fill]="_fillColor"
+          (mouseover)="mouseOver($event)"
+          (mouseleave)="mouseLeave($event)"
           (click)="sendStateInfo(state)">
           <title *ngIf="showTitles">{{ getStateTitle(state) }}</title>
         </path>

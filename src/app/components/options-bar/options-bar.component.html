@@ -1,14 +1,8 @@
 <div class="options-bar__wrapper">
-  <div
+  <div *ngFor="let option of optionsList"
     class="options-bar__option"
-    [class.options-bar__option--selected]="isSelected(optionsList.INFO)"
-    (click)="selectOption(optionsList.INFO)">
-    States Info
-  </div>
-  <div
-    class="options-bar__option"
-    [class.options-bar__option--selected]="isSelected(optionsList.QUIZ)"
-    (click)="selectOption(optionsList.QUIZ)">
-    States Quiz
+    [class.options-bar__option--selected]="isSelected(option)"
+    (click)="selectOption(option)">
+    {{ option.title }}
   </div>
 </div>
