@@ -1,0 +1,54 @@
+.states-list__wrapper {
+  padding: .5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.states-list__item-wrapper {
+  width: 50%;
+  box-sizing: border-box;
+
+  @media (max-width: 575.98px) {
+    width: 100%;
+  }
+}
+
+.states-list__item {
+  padding: .5rem 1rem;
+  margin: 0 .25rem .5rem .25rem;
+  background-color: lightgrey;
+  border: solid 1px gray;
+  border-radius: 4px;
+}
+
+.states-list__item-name {
+  padding-bottom: .25rem;
+}
+
+.states-list__color-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: .2rem 0;
+}
+
+.states-list__color-item {
+  width: 1rem;
+  height: 1rem;
+  border: solid 2px lightgrey;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &--red {
+    background-color: crimson;
+  }
+  &--green {
+    background-color: chartreuse;
+  }
+  &--blue {
+    background-color: cadetblue;
+  }
+  &--selected {
+    border-color: black;
+  }
+}

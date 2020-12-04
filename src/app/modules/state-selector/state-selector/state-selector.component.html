@@ -1,0 +1,39 @@
+<div class="option-title__wrapper">
+  States Selector
+</div>
+<div class="components__wrapper">
+  <div class="map__wrapper">
+    <gtx-states-map
+      [selectorMode]="true"
+      [selectedStates]="stateSelectorService.selectionItems"
+      [showTitles]="false">
+    </gtx-states-map>
+  </div>
+  <div class="info-box__wrapper">
+    <div [gtxInfoBox]="'green'">
+      Select one (or more) state in the list to show it in the map
+    </div>
+    <div class="selection-type__wrapper">
+      <div
+        class="selection-type__button"
+        [class.selection-type__button--active]="!stateSelectorService.selectMultiple"
+        (click)="setMultiple(false)">
+        Select one
+      </div>
+      <div
+        class="selection-type__button"
+        [class.selection-type__button--active]="stateSelectorService.selectMultiple"
+        (click)="setMultiple(true)">
+        Select multiple
+      </div>
+    </div>
+    <div class="selection-type__wrapper">
+      <div
+        class="selection-type__button"
+        (click)="clearSelection()">
+        Clear selection
+      </div>
+    </div>
+    <app-state-list-component></app-state-list-component>
+  </div>
+</div>

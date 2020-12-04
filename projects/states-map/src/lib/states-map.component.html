@@ -15,7 +15,7 @@
           [attr.d]="state.data"
           [attr.transform]="state.transform"
           class="map__state"
-          [style.fill]="_fillColor"
+          [style.fill]="getFillColor(state)"
           (mouseover)="mouseOver($event)"
           (mouseleave)="mouseLeave($event)"
           (click)="sendStateInfo(state)">

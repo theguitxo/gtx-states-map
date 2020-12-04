@@ -1,0 +1,23 @@
+.selection-type__wrapper {
+  padding: .5rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.selection-type__button {
+  box-sizing: border-box;
+  padding: .5rem 1rem;
+  text-align: center;
+  width: 45%;
+  border-radius: 1rem;
+  background-color: lightgray;
+  border-style: solid;
+  border-width: 2px;
+  border-color: dimgray;
+  cursor: pointer;
+
+  &--active {
+    background-color: cornflowerblue;
+    border-color: darkslateblue;
+  }
+}

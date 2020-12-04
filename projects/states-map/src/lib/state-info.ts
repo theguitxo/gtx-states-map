@@ -24,3 +24,8 @@ export interface CustomOtherCountriesNames {
   id: OtherCountryID;
   title: string;
 }
+
+export interface SelectedCodes {
+  code: string;
+  color: string;
+}

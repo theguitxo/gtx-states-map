@@ -1,0 +1,19 @@
+<div class="states-list__item">
+  <div class="states-list__item-name">
+    {{ state.name }}
+  </div>
+  <div class="states-list__color-wrapper">
+    <app-state-list-color-component
+      [color]="colorRed"
+      [selected]="colorSelection.red"
+      (click)="handlerSelection(colorRed)"></app-state-list-color-component>
+    <app-state-list-color-component
+      [color]="colorBlue"
+      [selected]="colorSelection.blue"
+      (click)="handlerSelection(colorBlue)"></app-state-list-color-component>
+    <app-state-list-color-component
+      [color]="colorGreen"
+      [selected]="colorSelection.green"
+      (click)="handlerSelection(colorGreen)"></app-state-list-color-component>
+  </div>
+</div>

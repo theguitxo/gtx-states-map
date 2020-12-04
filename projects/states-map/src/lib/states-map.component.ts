@@ -1,12 +1,11 @@
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
-import { AFRICAN_CITIES, ISLANDS_STATES, OTHER_COUNTRIES, STATES } from './constants';
-import { MapItem, State, StateInfo, CustomOtherCountriesNames, OtherCountryID, OtherCountry } from './state-info';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
+import { State, StateInfo, OtherCountryID, OtherCountry, SelectedCodes, CustomOtherCountriesNames } from './state-info';
 import { StatesMapService } from './states-map.service';
 
 function isValidColor(color: string): boolean {
   const element: HTMLElement = document.createElement('div');
   element.style.fill = color;
-  return element.style.fill !== '';
+  return (element.style.fill !== '');
 }
 
 @Component({
@@ -22,20 +21,20 @@ export class StatesMapComponent implements OnInit {
   @Input('includeIslandsStates') includeIslandsStates = true;
   @Input('includeAfricanCities') includeAfricanCities = true;
   @Input('useVariantTitle') useVariantTitle = false;
-  @Input('otherCountriesNames') otherCountriesNames;
+  @Input('otherCountriesNames') otherCountriesNames: CustomOtherCountriesNames[];
   @Input('changeOnHover') changeOnHover = true;
-
   @Input('fillColor') set bgColor(value: string) {
     if (isValidColor(value)) {
       this._fillColor = value;
     }
   }
-
   @Input('hoverFillColor') set hoverFillColor(value: string) {
     if (isValidColor(value)) {
       this._hoverFillColor = value;
     }
   }
+  @Input('selectorMode') selectorMode = false;
+  @Input('selectedStates') selectedStates: SelectedCodes[];
 
   @Output('selectState') selectStateEvent = new EventEmitter<State>();
 
@@ -47,7 +46,6 @@ export class StatesMapComponent implements OnInit {
   constructor(
     private statesMapService: StatesMapService,
     private renderer: Renderer2,
-    private elementRef: ElementRef,
   ) { }
 
   ngOnInit(): void {
@@ -58,6 +56,9 @@ export class StatesMapComponent implements OnInit {
     }
     if (this.includeAfricanCities) {
       this.states = this.states.concat(this.statesMapService.africanCities);
+    }
+    if (this.selectorMode) {
+      this.changeOnHover = false;
     }
   }
 
@@ -89,7 +90,7 @@ export class StatesMapComponent implements OnInit {
       title = this.otherCountriesNames.find(item => item.id === countryID)?.title;
     }
     if (!title) {
-      title = OTHER_COUNTRIES.find(item => item.id === countryID).title;
+      title = this.statesMapService.otherCountries.find(item => item.id === countryID).title;
     }
     return title;
   }
@@ -104,5 +105,15 @@ export class StatesMapComponent implements OnInit {
     if (this.changeOnHover && this._hoverFillColor) {
       this.renderer.setStyle(event.target, 'fill', this._fillColor);
     }
+  }
+
+  getFillColor(state: StateInfo): string {
+    if (this.selectorMode && this.selectedStates.length) {
+      const selected: SelectedCodes = this.selectedStates.find(item => item.code === state.code);
+      if (selected) {
+        return selected.color;
+      }
+    }
+    return this._fillColor;
   }
 }

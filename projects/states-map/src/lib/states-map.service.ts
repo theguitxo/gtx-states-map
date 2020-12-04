@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { OtherCountry, OtherCountryID, StateInfo } from './state-info';
 import * as StatesData from './states.json';
@@ -22,7 +21,6 @@ export class StatesMapService {
   };
 
   constructor() {
-    console.log('StatesMapService constructed');
     this.initStatesData();
   }
 
