@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { State } from 'dist/states-map/lib/state-info';
+import { State } from 'projects/states-map/src/lib/state-info';
 import * as stateList from './state-list.json';
 import { StateItem } from './state-quiz.interface';
 
