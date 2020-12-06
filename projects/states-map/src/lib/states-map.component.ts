@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output, Renderer2 } from '@angular/core';
 import { State, StateInfo, OtherCountryID, OtherCountry, SelectedCodes, CustomOtherCountriesNames } from './state-info';
-import { StatesMapService } from './states-map.service';
+import * as StatesData from './states.json';
 
 function isValidColor(color: string): boolean {
   const element: HTMLElement = document.createElement('div');
@@ -44,21 +44,30 @@ export class StatesMapComponent implements OnInit {
   _hoverFillColor: string = '#6C9';
 
   constructor(
-    private statesMapService: StatesMapService,
     private renderer: Renderer2,
   ) { }
 
   ngOnInit(): void {
-    this.otherCountries = this.statesMapService.otherCountries;
-    this.states = this.statesMapService.iberiaStates;
-    if (this.includeIslandsStates) {
-      this.states = this.states.concat(this.statesMapService.islandStates);
-    }
-    if (this.includeAfricanCities) {
-      this.states = this.states.concat(this.statesMapService.africanCities);
-    }
+    this.getStatesInfo();
     if (this.selectorMode) {
       this.changeOnHover = false;
+    }
+  }
+
+  private getStatesInfo(): void {
+    // Other countries
+    this.otherCountries = StatesData.otherCountry.map((item): OtherCountry => ({
+      id: item.id as OtherCountryID,
+      data: item.data,
+      title: item.title,
+    }));
+    // States
+    this.states = StatesData.iberiaStates;
+    if (this.includeIslandsStates) {
+      this.states = this.states.concat(StatesData.islandsStates);
+    }
+    if (this.includeAfricanCities) {
+      this.states = this.states.concat(StatesData.africanCities);
     }
   }
 
@@ -90,7 +99,7 @@ export class StatesMapComponent implements OnInit {
       title = this.otherCountriesNames.find(item => item.id === countryID)?.title;
     }
     if (!title) {
-      title = this.statesMapService.otherCountries.find(item => item.id === countryID).title;
+      title = StatesData.otherCountry.find(item => item.id === countryID).title;
     }
     return title;
   }

@@ -1,6 +1,18 @@
 # StatesMap
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+This library includes a SVG image with a map of the Spain provinces.
+
+The user can interact with the provinces clicking over them or marking them as selected.
+
+---
+
+Esta librería incluye una imagen SVG con un mapa de las provincias de España
+
+El usuario puede interactuar con las provincias pulsando sobre ellas o marcandolas como seleccionadas.
+
+---
+
+![](./map-image.png)
 
 ## Code scaffolding
 
