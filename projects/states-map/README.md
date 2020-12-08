@@ -87,10 +87,7 @@ export class AppComponent {
 
 # Español
 
----
-
 ## Descripción
-
 
 Esta librería incluye una imagen SVG con un mapa de las provincias de España
 
@@ -123,9 +120,7 @@ El usuario puede interactuar con las provincias pulsando sobre ellas o marcandol
 
 ## Ejemplos
 
----
-
-Map showing the name of the other countries
+Mapa mostrando el nombre de otros paises
 
 ```
 import { Component } from '@angular/core';
@@ -144,7 +139,7 @@ export class AppComponent {
 }
 ```
 
-Map in selection mode with the state Barcelona (code '08') selected
+Mapa en modo selección con la provincia de Barcelona (código '08') seleccionada
 
 ````
 import { Component } from '@angular/core';
@@ -173,4 +168,4 @@ export class AppComponent {
 
 ---
 
-![](./map-image.png)
+![](map-image.png)

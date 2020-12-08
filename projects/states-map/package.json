@@ -1,6 +1,6 @@
 {
   "name": "gtx-states-map",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "peerDependencies": {
     "@angular/common": "^10.1.6",
     "@angular/core": "^10.1.6"
@@ -9,7 +9,9 @@
     "tslib": "^2.0.0"
   },
   "repository": {
+    "directory": "./projects/states-map",
     "type": "git",
     "url": "https://github.com/theguitxo/gtx-states-map"
-  }
+  },
+  "readme": "README.md"
 }
