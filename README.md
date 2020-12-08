@@ -1,27 +1,87 @@
-# StatesMapDemo
+# States map component and demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
+This repository includes:
 
-## Development server
+* A component to include a states map of Spain to click over them and execute some action, or mark them are selected.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* A demo with three applications as examples how to use the component.
 
-## Code scaffolding
+[README.md file of the component](projects/states-map/README.md)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+Este repositorio incluye:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Un componente para insertar un mapa con las provincias de España para clickar sobre estas y ejecutar alguna acción, o marcarlas como seleccionadas.
 
-## Running unit tests
+* Una demo con tres aplicaciones de ejemplo sobre como usar el componente.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[fichero README.md del componente](projects/states-map/README.md)
 
-## Running end-to-end tests
+## States Info
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+In this application you can click over some state and get information about it.
 
-## Further help
+---
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+En esta aplicación puede pulsar sobre una provincia y obtener información.
+
+![](states.info.png)
+
+---
+
+## States Quiz
+
+This application is a little game to guess where is the state chosen randomly.
+
+---
+
+Esta aplicación es un pequeño juego para adivinar la provincia elegida al azar.
+
+![](states.quiz.png)
+
+---
+
+## States Selector
+
+This application permits select one or more states and show the selection in the map.
+
+---
+
+Esta aplicación permite seleccionar una o más provincias y mostrar la selección en el mapa.
+
+![](states.selector.png)
+
+---
+
+## Execute the demo
+
+After cloning the repository you can go to the folder where the files are located and execute this:
+
+`ng serve`
+
+or 
+
+`npm start`
+
+After the process is finish and the server started, start a navigator and put this url:
+
+`http://localhost:4200`
+
+---
+
+## Ejecutar la demo
+
+Después de clonar el repositorio ha de dirigirse a la carpeta donde se alojen los ficheros y ejecutar:
+
+`ng serve`
+
+o 
+
+`npm start`
+
+Después de finalizar el proceso e iniciar el servidor, inicie el navegador e introduzca esta url:
+
+`http://localhost:4200`
+
+---
