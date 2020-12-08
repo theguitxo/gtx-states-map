@@ -54,6 +54,10 @@ export class StatesMapComponent implements OnInit {
     }
   }
 
+  /**
+   * @description fills the properties of the component for the states data
+   * with the information of the .json file
+   */
   private getStatesInfo(): void {
     // Other countries
     this.otherCountries = StatesData.otherCountry.map((item): OtherCountry => ({
@@ -71,6 +75,11 @@ export class StatesMapComponent implements OnInit {
     }
   }
 
+  /**
+   * @description send the information about an state to the parent component
+   *
+   * @param state an object with information about a sate
+   */
   sendStateInfo(state: StateInfo): void {
     const emitState: State = {
       code: state.code,
@@ -79,6 +88,14 @@ export class StatesMapComponent implements OnInit {
     this.selectStateEvent.emit(emitState);
   }
 
+  /**
+   * @description gets the title, as the oficial or variant
+   * according if the user uses the parameter 'useVariantTitle'
+   *
+   * @param state an object with information about a sate
+   *
+   * @returns a string with the title to show in the map
+   */
   getStateTitle(state: StateInfo): string {
     return this.useVariantTitle ? state.variantTitle : state.title;
   }
@@ -104,18 +121,36 @@ export class StatesMapComponent implements OnInit {
     return title;
   }
 
+  /**
+   * @description event to execute when the mouse enters on a state area
+   *
+   * @param event object with information about the mouse event
+   */
   mouseOver(event: MouseEvent): void {
     if (this.changeOnHover && this._hoverFillColor) {
       this.renderer.setStyle(event.target, 'fill', this._hoverFillColor);
     }
   }
 
+  /**
+   * @description event to execute when the mouse leaves the area of a state
+   *
+   * @param event object with information about the mouse event
+   */
   mouseLeave(event: MouseEvent): void {
     if (this.changeOnHover && this._hoverFillColor) {
       this.renderer.setStyle(event.target, 'fill', this._fillColor);
     }
   }
 
+  /**
+   * @description gets the color, according the parameters provided by
+   * the user, to fill the state area
+   *
+   * @param state an object with information about a sate
+   *
+   * @returns string the color to use to fill the state
+   */
   getFillColor(state: StateInfo): string {
     if (this.selectorMode && this.selectedStates.length) {
       const selected: SelectedCodes = this.selectedStates.find(item => item.code === state.code);
