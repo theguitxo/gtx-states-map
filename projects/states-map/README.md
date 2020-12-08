@@ -168,4 +168,4 @@ export class AppComponent {
 
 ---
 
-![](map-image.png)
+![](https://raw.githubusercontent.com/theguitxo/gtx-states-map/main/projects/states-map/map-image.png)
