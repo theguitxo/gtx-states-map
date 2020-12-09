@@ -14,7 +14,7 @@ export class StateDatasheetService {
 
   loadINEOperation(opCode: string): Observable<number> {
     return new Observable<number>((subscriber) => {
-      this.httpClient.get(`http://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/${opCode}?nult=1`)
+      this.httpClient.get(`https://servicios.ine.es/wstempus/js/ES/DATOS_SERIE/${opCode}?nult=1`)
         .pipe(finalize(() => subscriber.complete()))
         .subscribe(
           (data: ResultINE) => subscriber.next(data.Data[0].Valor),
