@@ -85,3 +85,13 @@ Después de finalizar el proceso e iniciar el servidor, inicie el navegador e in
 `http://localhost:4200`
 
 ---
+
+## Live demo
+
+For a live demo of the component try next link:
+
+---
+
+Para una demostración del component, pulse sobre el siguiente enlace:
+
+[Live demo](https://www.guitxo.com/componente-con-mapa-de-provincias-de-espana-y-demo-de-uso/)
