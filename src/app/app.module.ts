@@ -26,5 +26,6 @@ registerLocaleData(localeEs, 'es');
     AppRoutingModule,
   ],
   bootstrap: [AppComponent],
+  export: []
 })
 export class AppModule { }
